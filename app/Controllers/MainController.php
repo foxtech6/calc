@@ -2,13 +2,16 @@
 
 namespace App\Controllers;
 
-
 use App\Requests\MainRequest;
+use Kernel\AbstractController;
 
-class MainController
+class MainController extends AbstractController
 {
-    public function index(MainRequest $request)
+    public function index(/*MainRequest $request*/)
     {
-        var_dump($request->test_params);
+        $this->render('main', [
+            'title' => 'My first page'
+        ]);
+
     }
 }

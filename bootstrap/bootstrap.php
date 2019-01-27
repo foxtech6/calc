@@ -1,5 +1,6 @@
 <?php
+define('PROJECT_PATH', dirname(__DIR__));
 
-require __DIR__ . '/../vendor/autoload.php';
-require_once __DIR__ . '/../routes/routes.php';
-require_once __DIR__ . '/configuration.php';
+require PROJECT_PATH . '/vendor/autoload.php';
+require_once PROJECT_PATH . '/routes/routes.php';
+require_once PROJECT_PATH . '/bootstrap/configuration.php';
