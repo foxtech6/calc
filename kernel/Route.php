@@ -67,6 +67,10 @@ class Route
      */
     public function getController(string $route) : array
     {
+        if (!$route) {
+            $route = '/';
+        }
+
         if (!isset($this->routes[$route])) {
             throw new NotFoundException('Not Found Controller');
         }
