@@ -39,6 +39,6 @@ class ControllerHandler
             $requestHandler = array_shift($actionArguments)->getClass();
         }
 
-        return [$controller->name, $actionName, $requestHandler->name];
+        return [$controller->name, $actionName, $requestHandler->name ?? null];
     }
 }
