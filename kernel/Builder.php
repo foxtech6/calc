@@ -2,6 +2,7 @@
 
 namespace Kernel;
 
+use Kernel\Exceptions\NotFoundException;
 use Throwable;
 
 /**
@@ -62,6 +63,8 @@ class Builder
      * @param string $controllerName Controller name
      * @param string $actionName     Method name in controller
      * @param string $requestHandler Validator for request
+     *
+     * @throws NotFoundException
      */
     private function callController(string $controllerName, string $actionName, string $requestHandler = null): void
     {
