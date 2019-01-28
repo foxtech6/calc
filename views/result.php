@@ -1,5 +1,14 @@
 <body>
-<h1><?= $estimated; ?></h1><br>
-<h1><?= $tax; ?></h1><br>
-<h1><?= $number; ?></h1><br>
+<?php
+foreach ($result as $item) {
+    echo $item['base'] . ',';
+    echo $item['commission'] . ',';
+    echo $item['tax'] . ',';
+    echo $item['sum'] . '<br>';
+}
+
+foreach ($total as $item) {
+    echo $item . ',';
+}
+?>
 </body>

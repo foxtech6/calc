@@ -1,10 +1,10 @@
 <body>
 <form action="calculate" method="post">
     Estimated value of the car:<br>
-    <input type="text" name="estimated" value="100">
+    <input type="text" name="estimated" value="10000">
     <br>
     Tax percentage:<br>
-    <input type="text" name="tax" value="30">
+    <input type="text" name="tax" value="10">
     <br>
     Number of instalments:<br>
     <input type="text" name="number" value="10">
