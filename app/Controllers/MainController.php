@@ -7,12 +7,20 @@ use Foxtech\Kernel\AbstractController;
 
 class MainController extends AbstractController
 {
-    public function index(/*MainRequest $request*/)
+    public function index()
     {
-        //var_dump($request->testParams);
         $this->render('main', [
             'title' => 'My first page'
         ]);
 
+    }
+
+    public function handleInformation(MainRequest $request)
+    {
+        $this->render('result', [
+            'estimated' => $request->estimated,
+            'tax'       => $request->tax,
+            'number'    => $request->number,
+        ]);
     }
 }
