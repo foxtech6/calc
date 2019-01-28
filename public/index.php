@@ -1,3 +1,5 @@
 <?php
 
-require_once __DIR__ . '/../bootstrap/bootstrap.php';
+define('PROJECT_PATH', dirname(__DIR__));
+
+require_once PROJECT_PATH . '/bootstrap/bootstrap.php';

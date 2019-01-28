@@ -2,16 +2,24 @@
 
 namespace App\Controllers;
 
-use App\Requests\MainRequest;
-use Kernel\AbstractController;
+use Foxtech\Kernel\AbstractController;
+use Foxtech\Kernel\Exceptions\NotFoundException;
 
+/**
+ * Class MainController
+ *
+ * @author Mykhailo Bavdys <bavdysmyh@ukr.net>
+ * @since 28.01.2019
+ */
 class MainController extends AbstractController
 {
-    public function index(/*MainRequest $request*/)
+    /**
+     * Main page
+     *
+     * @throws NotFoundException
+     */
+    public function index()
     {
-        $this->render('main', [
-            'title' => 'My first page'
-        ]);
-
+        $this->render('main');
     }
 }

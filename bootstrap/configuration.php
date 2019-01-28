@@ -1,6 +1,6 @@
 <?php
 
-use Kernel\{RequestMapper, Builder};
+use Foxtech\Kernel\{RequestMapper, Builder};
 
 $mapper = new RequestMapper();
 $mapper->setClientRoute($_SERVER['QUERY_STRING']);

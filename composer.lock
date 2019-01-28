@@ -4,16 +4,50 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0c42344ee0f7607a06d6cfdd6d7df4d6",
-    "packages": [],
+    "content-hash": "f728487db8089b4aaac1856f10e66181",
+    "packages": [
+        {
+            "name": "foxtech6/vc-kernel",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/foxtech6/vc-kernel.git",
+                "reference": "2f1a33a27b219a66c6ea91a46aaf3ab938f3aac2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/foxtech6/vc-kernel/zipball/2f1a33a27b219a66c6ea91a46aaf3ab938f3aac2",
+                "reference": "2f1a33a27b219a66c6ea91a46aaf3ab938f3aac2",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.1.26"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Foxtech\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "Mike",
+                    "email": "bavdysmyh@ukr.net"
+                }
+            ],
+            "description": "Kernel for vs framework",
+            "time": "2019-01-28T16:45:55+00:00"
+        }
+    ],
     "packages-dev": [],
     "aliases": [],
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
-        "php": "^7.2.10"
+        "php": "^7.1.26"
     },
     "platform-dev": []
 }
