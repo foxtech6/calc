@@ -2,11 +2,20 @@
 
 namespace App\Requests;
 
-
 use Foxtech\Kernel\AbstractRequestHandler;
 
+/**
+ * Class CalculateRequest
+ *
+ * @author Mykhailo Bavdys <bavdysmyh@ukr.net>
+ * @since 28.01.2019
+ */
 class CalculateRequest extends AbstractRequestHandler
 {
+    /**
+     * {@inheritdoc}
+     * @see AbstractRequestHandler::rules()
+     */
     public function rules(): array
     {
         return [

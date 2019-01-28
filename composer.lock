@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/foxtech6/vc-kernel.git",
-                "reference": "2f1a33a27b219a66c6ea91a46aaf3ab938f3aac2"
+                "reference": "1d6afcf99a07627eb495d6699f1b72efa3a4668c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/foxtech6/vc-kernel/zipball/2f1a33a27b219a66c6ea91a46aaf3ab938f3aac2",
-                "reference": "2f1a33a27b219a66c6ea91a46aaf3ab938f3aac2",
+                "url": "https://api.github.com/repos/foxtech6/vc-kernel/zipball/1d6afcf99a07627eb495d6699f1b72efa3a4668c",
+                "reference": "1d6afcf99a07627eb495d6699f1b72efa3a4668c",
                 "shasum": ""
             },
             "require": {
@@ -37,7 +37,7 @@
                 }
             ],
             "description": "Kernel for vs framework",
-            "time": "2019-01-28T16:45:55+00:00"
+            "time": "2019-01-28T21:52:34+00:00"
         }
     ],
     "packages-dev": [],

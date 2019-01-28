@@ -14,12 +14,38 @@ use Foxtech\Kernel\Exceptions\NotFoundException;
  */
 class CalculateController extends AbstractController
 {
-    private const FRIDAY_NUMBER_DAY = 1;
+    /**
+     * Number day from week
+     */
+    private const FRIDAY_NUMBER_DAY = 5;
+
+    /**
+     * Start hour
+     */
     private const FIRST_HOUR = 15;
+
+    /**
+     * End hour
+     */
     private const SECOND_HOUR = 20;
+
+    /**
+     * Base price policy
+     *
+     * @var float
+     */
     private $basePricePolicy = 0.11;
+
+    /**
+     * Commission
+     *
+     * @var float
+     */
     private $commission = 0.17;
 
+    /**
+     * CalculateController constructor
+     */
     public function __construct()
     {
         $this->checkDate();
@@ -32,7 +58,7 @@ class CalculateController extends AbstractController
      *
      * @throws NotFoundException
      */
-    public function index(CalculateRequest $request)
+    public function index(CalculateRequest $request): void
     {
         $basePremium = round($request->estimated / $request->number * $this->basePricePolicy, 2);
         $commission = round($basePremium * $this->commission, 2);
@@ -64,9 +90,15 @@ class CalculateController extends AbstractController
         $this->render('result', [
             'result' => $result,
             'total' => $total,
+            'basePricePolicy' => $this->basePricePolicy,
+            'commission' => $this->commission,
+            'tax' => $request->tax
         ]);
     }
 
+    /**
+     * Check day for friday 15-20
+     */
     private function checkDate(): void
     {
         if (self::FRIDAY_NUMBER_DAY != date('w')) {
