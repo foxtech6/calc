@@ -5,7 +5,7 @@ namespace App\Requests;
 
 use Foxtech\Kernel\AbstractRequestHandler;
 
-class MainRequest extends AbstractRequestHandler
+class CalculateRequest extends AbstractRequestHandler
 {
     public function rules(): array
     {

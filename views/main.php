@@ -1,7 +1,5 @@
 <body>
-<h1><?= $title; ?></h1>
-
-<form action="information" method="post">
+<form action="calculate" method="post">
     Estimated value of the car:<br>
     <input type="text" name="estimated" value="100">
     <br>
