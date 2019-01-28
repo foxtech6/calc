@@ -3,14 +3,14 @@
 namespace App\Requests;
 
 
-use Kernel\AbstractRequestHandler;
+use Foxtech\Kernel\AbstractRequestHandler;
 
 class MainRequest extends AbstractRequestHandler
 {
     public function rules(): array
     {
         return [
-            'test_params' => 'int|max:21|min:10',
+            'testParams' => 'int|max:21|min:10',
         ];
     }
 }

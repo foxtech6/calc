@@ -1,6 +1,6 @@
 <?php
 
-use Kernel\Route;
+use Foxtech\Kernel\Route;
 
 $route = new Route();
 
