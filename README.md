@@ -1,4 +1,4 @@
-# vc(view-controller) framework
+# vc(view-controller) micro framework
 
 required: php7.1.26
 
