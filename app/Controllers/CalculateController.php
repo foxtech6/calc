@@ -93,7 +93,7 @@ class CalculateController extends AbstractController
             'basePricePolicy' => $this->basePricePolicy,
             'commission' => $this->commission,
             'tax' => $request->tax
-        ]);
+        ])->withErrors($request);
     }
 
     /**
