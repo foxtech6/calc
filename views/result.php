@@ -23,7 +23,7 @@
             <div class="tbl-content">
                 <table cellpadding="0" cellspacing="0" border="0">
                     <tbody>
-                    <tr>
+                    <tr class="total">
                         <td>Total</td>
                     <?php foreach ($total as $item): ?>
                         <td><?= $item ?></td>
