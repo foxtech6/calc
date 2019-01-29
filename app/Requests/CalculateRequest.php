@@ -2,7 +2,7 @@
 
 namespace App\Requests;
 
-use Foxtech\Kernel\AbstractRequestHandler;
+use Foxtech\Kernel\AbstractRequest;
 
 /**
  * Class CalculateRequest
@@ -10,7 +10,7 @@ use Foxtech\Kernel\AbstractRequestHandler;
  * @author Mykhailo Bavdys <bavdysmyh@ukr.net>
  * @since 28.01.2019
  */
-class CalculateRequest extends AbstractRequestHandler
+class CalculateRequest extends AbstractRequest
 {
     /**
      * {@inheritdoc}

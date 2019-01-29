@@ -1,10 +1,10 @@
 <body>
-    <?php if ($errors) :?>
-        <a href="/">Back</a>
+    <?php if (isset($errors)) :?>
+        <a class="back" href="/"><div class="arrow-box"></div>back to calculator</a>
         <div class="errors-title"><h1>Validation errors</h1></div>
         <div class="errors"><?= implode(', ', $errors) ?></div>
     <?php else :?>
-        <a href="/">Back</a>
+        <a class="back" href="/"><div class="arrow-box"></div>back to calculator</a>
         <section class="table">
             <h1>Result Table</h1>
             <div class="tbl-header">

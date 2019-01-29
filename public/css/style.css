@@ -1,8 +1,12 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
+html {
+    height: 100%;
+}
 body{
     background: -webkit-linear-gradient(left, #25c481, #25b7c4);
     background: linear-gradient(to right, #25c481, #25b7c4);
     font-family: 'Roboto', sans-serif;
+    height: 100%;
 }
 section{
     margin: 50px;
@@ -112,10 +116,13 @@ section{
     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
 }
 .not-found {
-    left: 50%;
-    margin: auto;
-    position: absolute;
-    top: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    font-size: 100px;
+    color: #ffffff;
 }
 .errors-title {
     text-align: center;
@@ -124,4 +131,20 @@ section{
 .errors {
     text-align: center;
     color: red;
+}
+.back {
+    color: darkolivegreen;
+    text-decoration: navajowhite;
+    font-weight: bold;
+    font-size: 20px;
+}
+.arrow-box {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 8px 20px 8px 0;
+    border-color: transparent #e9ddd1 transparent transparent;
+    display: inline-block;
+    margin-right: 12px;
+    margin-top: 6px;
 }
