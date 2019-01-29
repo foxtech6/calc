@@ -8,3 +8,5 @@ How install:
 ```sh
 $ composer install
 ```
+
+[framework kernel](https://github.com/foxtech6/vc-kernel)
