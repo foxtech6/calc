@@ -19,9 +19,9 @@ class CalculateRequest extends AbstractRequest
     public function rules(): array
     {
         return [
-            'estimated' => 'required|number|max:100000|min:100',
-            'tax'       => 'required|number|max:100|min:0',
-            'number'    => 'required|number|max:12|min:1',
+            'estimated' => 'required|float|max:100000|min:100',
+            'tax'       => 'required|int|max:100|min:0',
+            'number'    => 'required|int|max:12|min:1',
         ];
     }
 }
