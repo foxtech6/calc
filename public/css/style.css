@@ -117,3 +117,11 @@ section{
     position: absolute;
     top: 50%;
 }
+.errors-title {
+    text-align: center;
+    color: orange;
+}
+.errors {
+    text-align: center;
+    color: red;
+}
